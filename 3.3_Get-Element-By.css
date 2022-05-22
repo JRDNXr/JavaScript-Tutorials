@@ -1,0 +1,10 @@
+body {
+  background-color: lightslategray;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: green;
+  border-color: green;
+}
