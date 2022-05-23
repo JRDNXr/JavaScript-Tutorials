@@ -1,0 +1,13 @@
+body {
+  background-color: lightslategray;
+  font-family: Arial;
+  padding-left: 15px;
+}
+
+span.boldText {
+  font-weight: bold;
+}
+
+nonBoldText {
+  font-weight: normal;
+}
