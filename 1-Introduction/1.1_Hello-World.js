@@ -17,4 +17,4 @@
 */
 
 // console.log can be used to print text to the console.
-console.log("Hello, world!");
+console.log("Hello, World!"); // Output | Hello, World!
