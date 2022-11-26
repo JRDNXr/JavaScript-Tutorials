@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4.1 - Changing CSS Content</title>
+        <link rel="stylesheet" href="/Users/JRDN/Documents/Coding/JavaScript/4.0_Learning/4.0_Combining-JavaScript/4.1_Changing-CSS-Content/4.1_Changing-CSS-Content.css/">
+    </head>
+    <body>
+
+        <!-- JavaScript will match the id in this line and change the size of the font for this sentence. -->
+        <!-- If you look in the CSS file, the content within the <section> brackets should be at size 100. But JavaScript overrides
+             CSS. The boldness remains since it is not changed by JavaScript. -->
+        <section>
+            <p id="changeThisLine">This is an example sentence that will have its style changed using JavaScript.</p>
+        </section>
+
+        <hr>
+
+        <!-- You can use any CSS styling properties in JavaScript and style it from there. -->
+        <p id="styleUsingJS">This is another example of how JavaScript can style.</p>
+
+        <hr>
+
+        <!-- You can hide text using the CSS style property "display". -->
+        <p id="hideMe">You can hide this text using JavaScript.</p>
+
+        <button type="button" onclick="hideText()">Click to Hide Text</button>
+
+        <hr>
+
+        <!-- You can reveal text using the CSS style property "display". -->
+        <!-- NOTE: Text is originally hidden because of CSS. Since JavaScript overrides CSS, it reveals the content. 
+                   when you click on the button. -->
+        <p id="showMe">You can reveal this text using JavaScript.</p>
+
+        <button type="button" onclick="showText()">Click to Show Text</button>
+    </body>
+
+    <footer>
+        <script src="/Users/JRDN/Documents/Coding/JavaScript/4.0_Learning/4.0_Combining-JavaScript/4.1_Changing-CSS-Content/4.1_Changing-CSS-Content.js/"></script>
+    </footer>
+</html>
