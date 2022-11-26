@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- JavaScript can use id's to manipulate HTML code. -->
+        <!-- It does this by finding the HTML element id name and then changes the element content. -->
+
+        <!-- This example shows how we can embed text into the webpage using JavaScript rather than using HTML. -->
+        <p>The sentence below is embeded by JavaScript using the id "JavaScript-embed-text".</p>
+        <p id="JavaScript-embed-text"></p>
+
+        <hr>
+
+        <!-- This example changes already embedded HTML code. -->
+        <p>Change the sentence below by clicking on the button:</p>
+        <p id="changeThis">The solar system is giant.</p>
+
+        <button type="button" onclick="changeText()">CHANGE HERE</button>
+
+        <hr>
+
+        <!-- This example shows how we can embed a picture into the webpage using JavaScript rather than HTML. -->
+        <p>The picture below is embeded by JavaScript using the id "JavaScript-embed-picture".</p>
+        <img id="JavaScript-embed-picture" width="150px"/>
+
+        <hr>
+
+        <!-- This example changes an already embeded picture. -->
+        <p>You can change the pictures using the buttons below. Both pictures are embeded using JavaScript.</p>
+        <img id="Car-Plane-Picture" src="/Users/JRDN/Documents/Coding/JavaScript/4.0_Learning/0.0_Pictures/Cartoon-Car.png" width="25%">
+        <br>
+        <button type="button" onclick="changePicToCar()">CAR</button>
+        <button type="button" onclick="changePicToPlane()">PLANE</button>
+    </body>
+
+    <footer>
+        <script src="/Users/JRDN/Documents/Coding/JavaScript/4.0_Learning/4.0_JavaScript-and-HTML/4.0_Changing-HTML-Content/4.0_Changing-HTML-Content.js"></script>
+    </footer>
+</html>
