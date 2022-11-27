@@ -1,13 +1,52 @@
+// A variable (also known as an identifier) is a text that contains a value.
+// We call this text a "String" in programming.
 
 // Declare variables by using the "let" statement.
+let a;
+
+// Initialize a variable by appending an equal sign followed by either a number or a String.
 let x = 3;
 let y = 5;
+
+let b = "test"; 
+
+// Numbers are written as is. Strings are written with quotes. More on that below.
+// Numbers and Strings are called Literals.
+
+// Identifiers: The variable name.
+// Ie. let "x" = 3; the "x" is the identifier.
+
+// NOTE: JavaScript identifiers cannot contain hypens. Only underscores are allowed.
+// NOTE: JavaScript is Case Sensitive.
+//       Ie. let firstName = "";
+//           let firstname = "";
+//       Notice the difference in the "N". These 2 identifiers will be treated differently.
 
 // You can also declare variables using the "var" statement.
 var z = 10;
 
-// You can declare constant variables. These variables are unchangeable once initialized.
+// vars:
+//      - Can be redeclared.
+//      - Can be declared after use.
+//      - Are not limited or restricted by scopes.
+
+// However, vars are NOT recommended, as it can make large scale programs more difficult.
+
+// It is best to use let:
+/*
+    - Variables defined with let cannot be Redeclared.
+
+    - Variables defined with let must be Declared before use.
+
+    - Variables defined with let have Block Scope.
+*/
+
+// The last keyword that can declare variables is const. These variables are unchangeable once initialized.
 // It's best practice to use CAPITALS when creating a const variable name.
+// const does not define a constant value. It defines a constant reference to a value.
+// This simply means that the identifier used in a const cannot be declared or initialized elsewhere. const's main purpose is to
+// prevent the declaration and intitialization of another identifier with the same name.
+
 const PIE = 3.14;
 
 // This will generate an error.
@@ -19,7 +58,8 @@ console.log(PIE);
 
 
 // You can initialize numbers and text into variables.
-// Strings must be wrapped in quotes. You can use single quotes, double quotes, and even back quotes. Examples are shown below in the order mentioned.
+// Strings must be wrapped in quotes. You can use single quotes, double quotes, and even back quotes. Examples are shown below
+// in the order mentioned.
 // You must start and end with the same punctuation marks.
 let firstName = 'JRDN';
 let lastName = "DSouza";

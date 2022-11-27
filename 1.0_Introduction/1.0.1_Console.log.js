@@ -1,4 +1,3 @@
-
 // We can manipulate JavaScript code within a console.log output. This page consists of many different methods of
 // utilizing console.log.
 
