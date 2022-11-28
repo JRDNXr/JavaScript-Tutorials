@@ -33,13 +33,13 @@ console.log("The && Operator Example 1: " + j); // Output | The && Operator Exam
 j = "Text";
 j &&= "Blank";
 
-console.log("The && Operator Example 1.1: " + j); // Output | The && Operator Example 1.1: Blank
+console.log("The && Operator Example 2: " + j); // Output | The && Operator Example 2: Blank
 
 // If you declare k without initializing it, the console will output "undefined" since the variable holds no value.
 let k = false;
 k &&= 500;
 
-console.log("The && Operator Example 2: " + k); // Output | The && Operator Example 2: false
+console.log("The && Operator Example 3: " + k); // Output | The && Operator Example 3: false
 
 console.log();
 
@@ -66,8 +66,3 @@ let c = null;
 c ||= 101;
 
 console.log("The || Operator Example 3: " + c); // Output | The || Operator Example 3: 101
-
-let t = 20;
-t ^= 5;
-
-console.log(t);
