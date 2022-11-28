@@ -3,7 +3,6 @@
 //      - Assignment Operators
 //      - Comparison Operators
 //      - Logical Operators
-//      - Conditional Operators
 //      - Type Operators
 
 let x = 6;
@@ -21,7 +20,7 @@ let y = 2;
 let sum1 = x + y;
 let sum2 = 25 + 50;
 
-// We can concatenate Strings using the + operator. Notice the difference on each line and how they look when run.
+// We can concatenate Strings and variables using the + operator. Notice the difference on each line and how they look when run.
 console.log("Additon " + "Statement 1: " + sum1); // Output | Addition Statement 1: 8
 console.log("Additon Statement 2: " + sum2 + "\n"); // Output | Addition Statement 2: 75
 
