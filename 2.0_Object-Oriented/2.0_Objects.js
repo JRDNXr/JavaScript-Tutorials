@@ -41,3 +41,9 @@ console.log();
 // An alternative way to access object properties:
 console.log("Phone 1 - Name: " + phone_1["name"]); // Output | Phone 1 - Name: iPhone
 console.log("Phone 2 - Name: " + phone_2["name"]); // Output | Phone 2 - Name: Galaxy
+
+
+
+// You can also just declare objects (not initialize) by using the "new" keyword.
+
+//cars = new car();

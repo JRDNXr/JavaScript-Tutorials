@@ -9,10 +9,17 @@ const person = {
     id:"145",
 
     // This is an object method stored as a function definition.
-    // "this" keyword refers to an object. You'll learn more on this later.
-    // For now, "this" refers to the property of person.
+    // "this" keyword refers to the owner of the function. You'll learn more on the "this" keyword later.
+    // Since the owner of this function is the object "person", we can call the firstName and lastName properties.
     fullName:function() {
         return this.firstName + " " + this.lastName;
+
+        // This line will give an error. This is because the variables firstName and lastName are not defined within the function's
+        // scope (it's brackets).
+        //return firstName + lastName;
+
+        // This is why we use the "this" keyword. It tells the program that the declarations and initializations of these variables
+        // exist outside of the scope of the function.
     }
 };
 

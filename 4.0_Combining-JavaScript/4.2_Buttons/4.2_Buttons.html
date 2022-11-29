@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4.2 - Buttons</title>
+    </head>
+
+    <body>
+        <p id="textChange">This text will change to something else.</p>
+        
+        <!-- You can run the whole JavaScript code within HTML, but this is not recommended. -->
+        <button onclick="document.getElementById('textChange').innerHTML = 'Button clicked! Sentence changed!'">CLICK THIS BUTTON</button>
+
+        <!-- The length of the JavaScript code is too long here. So we use the technique below. -->
+
+        <hr>
+
+        <p id="changeText">Another sentence that can be changed ny clicking the button below.</p>
+
+        <!-- We call JavaScript code by using functions (pasting the whole JavaScript code in an HTML document is inefficient
+             and can be lengthy). -->
+        <button onclick="buttonClicked()">CLICK ME!</button>
+    </body>
+
+    <footer>
+        <script src="4.2_Buttons.js"></script>
+    </footer>
+</html>
