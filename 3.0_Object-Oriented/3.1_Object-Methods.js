@@ -3,8 +3,8 @@
 // Methods are stored in properties as "function definitions".
 
 const person = {
-    firstName: "JRDN",
-    lastName: "D",
+    firstName: "Bruce",
+    lastName: "Wayne",
     employee: "Yes",
     id: 145,
 
@@ -25,5 +25,17 @@ const person = {
 
 
 // To access object methods:
-console.log(person.fullName());
+console.log(person.fullName()); // Output | Bruce Wayne
+
+// Accessing without the brackets () will return the function definition.
+console.log(person.fullName); // Output |  [Function: fullName]
+
+
+
+// Adding a Method to an Object outside of its declaration:
+person.nameReversed = function() {
+    return this.lastName + ", " + this.firstName;
+}
+
+console.log(person.nameReversed()); // Output | Wayne, Bruce
 
