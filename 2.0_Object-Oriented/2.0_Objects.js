@@ -37,24 +37,49 @@ employee.id = 9730;
 employee.age = 31;
 employee.level = 'Intermediate';
 employee.salary = "65,000"
+employee.employed = true;
 
 
-// We can access object properties like so:
+// EXAMPLE 1: We can access object properties like so:
 console.log("Employee ID: " + employee.id); // Output | Employee ID: 9730
 console.log("Employee Pay: $" + employee.salary); // Output | Employee Pay: $65000
 
 console.log();
 
-// An alternative way to access object properties:
+// EXAMPLE 2: An alternative way to access object properties:
 console.log("Employee Age: " + employee["age"]); // Output | Employee Age: 31
 console.log("Employee Level: " + employee["level"]); // Output | Employee Status: Intermediate
+
+// EXAMPLE 3: You can also access the objects by using variables.
+// This option initializes the variable "obj1" to be the same value as "employee.salary".
+let obj1 = employee.salary;
+
+console.log("Employee Salary: $" + obj1); // Output: | Employee Salary: $65,000
+
+// This option initializes the variable "obj2" as a String called "salary". We call this like we would in Example 2.
+let obj2 = "salary";
+
+console.log("Employee Salary: $" + employee[obj2]); // Output: | Employee Salary: $65,000
 
 console.log();
 
 
-// We can change object property values giving it a new value.
+
+// We can CHANGE object property values by giving it a new value.
 employee.id = 4545;
 console.log("Employee ID: " + employee.id); // Output | Employee ID: 4545"
+
+console.log();
+
+// We can DELETE object properties. Note that this deletes the property AND the property value:
+console.log("Employee is Employed?: " + employee.employed); // Output | Employee is Employed?: true
+
+delete employee.employed;
+
+// You can also do this to delete:
+// delete employee["employed"];
+
+console.log("Employee is Employed?: " + employee.employed); // Output | Employee is Employed?: undefined
 
 console.log();
 
