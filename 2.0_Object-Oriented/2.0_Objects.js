@@ -15,35 +15,80 @@
 // All Phones have the same properties, but the property values (Apple, iPhone, 11 Pro Max, Silver) differ from phone to phone.
 
 
-// We create objects like so:
-const phone_1 = {brand:"Apple", name:"iPhone", model:"11 Pro Max", colour:"Silver"};
+// NOTE: It's best practice to declare objects with the const keyword versus let.
+// We create objects like so.
+const phone_1 = {brand: "Apple", name: "iPhone", model: "11 Pro Max", colour: "Silver"};
 
 // The values are known as ' name:"value" ' pairs.
 
 // Another way of organizing our objects. This can be useful when there are lots of properties:
-const phone_2 = {
-    brand:"Samsung",
-    name:"Galaxy",
-    model:"S22",
-    colour:"Black"
+const cellphone = {
+    brand: "Apple",
+    name: "iPhone",
+    model: "11 Pro Max",
+    colour: "Silver"
 };
 
-// NOTE: It's best practice to declare objects with the const keyword versus let.
+// And a final way of organizing our objects. This can be useful for when you need to create objects later on in your program:
+const employee = {}; // Declares "employee" as an object, but contains no properties.
 
+// We can initialize the properties later on:
+employee.id = 9730;
+employee.age = 31;
+employee.level = 'Intermediate';
+employee.salary = "65,000"
 
 
 // We can access object properties like so:
-console.log("Phone 1 - Brand: " + phone_1.brand); // Output | Phone 1 - Brand: Apple
-console.log("Phone 2 - Brand: " + phone_2.brand); // Output | Phone 2 - Brand: Samsung
+console.log("Employee ID: " + employee.id); // Output | Employee ID: 9730
+console.log("Employee Pay: $" + employee.salary); // Output | Employee Pay: $65000
 
 console.log();
 
 // An alternative way to access object properties:
-console.log("Phone 1 - Name: " + phone_1["name"]); // Output | Phone 1 - Name: iPhone
-console.log("Phone 2 - Name: " + phone_2["name"]); // Output | Phone 2 - Name: Galaxy
+console.log("Employee Age: " + employee["age"]); // Output | Employee Age: 31
+console.log("Employee Level: " + employee["level"]); // Output | Employee Status: Intermediate
+
+console.log();
+
+
+// We can change object property values giving it a new value.
+employee.id = 4545;
+console.log("Employee ID: " + employee.id); // Output | Employee ID: 4545"
+
+console.log();
 
 
 
-// You can also just declare objects (not initialize) by using the "new" keyword.
+// NOTE: All things in JavaScript are objects.
+// This includes:
+//          - Booleans
+//          - Numbers
+//          - Strings
+//          - Dates
+//          - Maths
+//          - Regular expressions
+//          - Arrays
+//          - Functions
+//          - Objects
 
-//cars = new car();
+// A "Primitive Value" is a better definition for a "Hard Coded" value.
+// Ie. When you type 3.14 into the program instead of placing it in a variable.
+//
+// Primitive Values ARE NEVER objects.
+
+
+
+// JavaScript Objects are Mutable. This means we can create a reference (or an alias) to the original object.
+// Any changes you make to this alias will effect the original object.
+
+const Greg = employee;
+
+console.log("Greg's ID: " + Greg.id); // Output | Greg's ID: 4545
+
+
+// Any changes we make to Greg's properties automatically change in the original object.
+Greg.age = 51;
+
+// Notice how we use the property "employee.age" here and how it effects the outcome:
+console.log("Greg's Age: " + employee.age); // Output | Greg's Age: 31

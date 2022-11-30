@@ -3,12 +3,19 @@
     <head>
         <title>4.4 - Keyboard Events</title>
         <link rel="icon" type="image/x-icon" href="../../0.0_Pictures/JD-Logo-King-Custom.png">
-        
+
         <link rel="stylesheet" href="4.4_Keyboard-Events.css"/>
     </head>
 
     <body>
+        <form>
+            <label for="userText">Type Here:</label>
+            <input type="text" placeholder="Enter any number" name="userText" onkeydown="detectedKey()"/>
 
+            <p id="textMsg">Did the user type in the box?: No</p>
+
+            <input type="reset" onclick="reset()"/>
+        </form>
     </body>
 
     <footer>

@@ -3,10 +3,10 @@
 // Methods are stored in properties as "function definitions".
 
 const person = {
-    firstName:"JRDN",
-    lastName:"D",
-    employee:"Yes",
-    id:"145",
+    firstName: "JRDN",
+    lastName: "D",
+    employee: "Yes",
+    id: 145,
 
     // This is an object method stored as a function definition.
     // "this" keyword refers to the owner of the function. You'll learn more on the "this" keyword later.
