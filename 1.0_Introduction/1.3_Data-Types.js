@@ -5,7 +5,7 @@
 //      - Strings (text)
 //      - Numbers (known as Integers or ints)
 //      - Boolean (true or false)
-//      - Undefined and Empty
+//      - Undefined, Null, & Empty
 //      - Arrays (will learn later on)
 //      - Objects (will learn later on)
 
@@ -51,7 +51,6 @@ console.log();
 
 
 // Numbers can be written as is. However, large numbers can be written in scientific notation.
-
 let num1 = 123e5;
 let num2 = 123e-5;
 
@@ -73,13 +72,14 @@ console.log();
 
 
 
-// Undefined and Empty values are different.
+// Undefined, Null, and Empty values are all different.
 let undefined_Val; // Value is undefined and therefore the type is undefined.
+
+let null_Val = null; // Value is null. This represents the "absence" of an OBJECT value.
 
 let empty_Val = ""; // Value is an empty String. Therefore, the type is a String.
 
 // You can empty any variable of its value by setting it to "undefined".
-// (You can also empty a String variable by setting it to "", however, this becomes an "Empty" value rather than "Undefined").
 let numEx = 18;
 let StringEx = "Blank";
 
