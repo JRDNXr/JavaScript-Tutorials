@@ -39,6 +39,14 @@ inventory.delete("bananas");
 console.log(inventory.get("bananas")); // Output | undefined
 console.log(inventory.size); // Output | 3
 
+console.log();
+
+
+// Iterate through all elements in a Map.
+inventory.forEach(function(value, key) {
+    console.log(key + " = " + value); // Output | coffee = 10.99 / soup = 3.59 / juice = 8.99
+})
+
 
 // Clear all elements from a Map.
 inventory.clear();

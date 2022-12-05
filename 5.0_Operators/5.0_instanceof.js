@@ -4,13 +4,24 @@
 
 
 
+// Instance of an Iterator.
+const myArray = [1, 2, 3];
+
+const myArrayIterator = myArray[Symbol.iterator]();
+
+const myArrayIteratorBool = myArrayIterator instanceof Object;
+console.log("Is this an Object?: " + myArrayIteratorBool); // Is this an Object? true
+
+
 // Instance of a Set.
 const mySet = new Set([]);
 
-console.log(mySet instanceof Set); // Output | true
+const mySetBool = mySet instanceof Set
+console.log("Is this a Set?: " + mySetBool); // Output | Is this a Set? true
 
 
 // Instance of a Map.
 const myMap = new Map([]);
 
-console.log(myMap instanceof Map); // Output | true
+const myMapBool = myMap instanceof Map;
+console.log("Is this a Map?: " + myMapBool); // Output | Is this a Map? true

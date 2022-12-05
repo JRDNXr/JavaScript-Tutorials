@@ -36,15 +36,21 @@ console.log();
 
 
 
+// typeof for an Iterator.
+const myArray = [1, 2, 3];
+
+const myArrayIterator = myArray[Symbol.iterator]();
+
+console.log("What is an Iterator?: " + typeof(myArrayIterator)); // Output | What is an Iterator?: object
+
+
 // typeof for a Set.
 const mySet = new Set([]);
 
-console.log(typeof(mySet)); // Output | object
-
-console.log();
+console.log("What is a Set?: " + typeof(mySet)); // Output | What is a Set?: object
 
 
 // typeof for a Map.
 const myMap = new Map([]);
 
-console.log(typeof(myMap)); // Output | object
+console.log("What is a Map?: " + typeof(myMap)); // Output | "What is a Map?: object
