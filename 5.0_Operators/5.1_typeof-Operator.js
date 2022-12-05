@@ -32,3 +32,19 @@ type_of_variable = typeof(exampleText);
 
 console.log(type_of_variable); // Output | string
 
+console.log();
+
+
+
+// typeof for a Set.
+const mySet = new Set([]);
+
+console.log(typeof(mySet)); // Output | object
+
+console.log();
+
+
+// typeof for a Map.
+const myMap = new Map([]);
+
+console.log(typeof(myMap)); // Output | object
