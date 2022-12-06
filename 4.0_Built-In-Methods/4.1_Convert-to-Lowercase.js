@@ -2,7 +2,7 @@
 let message = "THIS IS AN EXAMPLE TEXT.";
 
 
-// The method "toUpperCase" will make CAPITALIZE all text. Numbers and special characters are uneffected.
+// The method "toLowerCase" will make lowercase all text. Numbers and special characters are uneffected.
 let new_message = message.toLowerCase();
 
 console.log(new_message); // Output | this is an example text.
