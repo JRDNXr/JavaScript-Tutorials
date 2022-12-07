@@ -14,8 +14,9 @@ console.log(str2.lastIndexOf("high")); // Output || 37
 // NOTE: Both indexOf() and lastIndexOf() returns -1 if the specified text is not found in the String.
 console.log(str2.lastIndexOf("hope")); // Output || -1
 
+
 // NOTE: Both indexOf() and lastIndexOf() accept a second parameter as the starting position of their search.
-// The value 12 below starts the serach at "flies".
+// The value 12 below starts the search at "flies".
 console.log(str2.indexOf("high", 12)); // Output || 18
 
 console.log();
@@ -31,3 +32,15 @@ console.log(str2.lastIndexOf("high", 16)); // Output || 2
 const str3 = "Old happy Saint Nich. He's so Happy. He must be HAPpY all the time.";
 
 console.log(str3.search("happy")); // Output | 4
+
+
+// NOTE: indexOf() and search() are similar. But they each have one KEY difference
+//  - indexOf() cannot make powerful search values (RegEx or Regular Expressions).
+//  - search() cannot take a second parameter.
+
+
+
+// The match() method returns an array containing the results of matching a text against a String.
+const str4 = "Mining in the running often carries something";
+
+console.log(str4.match("in"));
