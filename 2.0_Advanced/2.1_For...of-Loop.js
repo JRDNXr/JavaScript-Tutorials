@@ -1,9 +1,9 @@
 
-const name = "Stephanie";
+const person = "Stephanie";
 
 // We can use a for loop to iterate over the elements of a string:
-for (let i = 0; i < name.length; i++) {
-    console.log(name[i]); // Output | S / t / e / p / h / a / n / i / e
+for (let i = 0; i < person.length; i++) {
+    console.log(person[i]); // Output | S / t / e / p / h / a / n / i / e
 }
 
 console.log();
@@ -11,7 +11,7 @@ console.log();
 
 
 // A "for...of loop" is a simplified version of the above.
-for (let i of name) { // The keyword "of" is crucial to getting our result. There are different keywords that can be used to get different results.
+for (let i of person) { // The keyword "of" is crucial to getting our result. There are different keywords that can be used to get different results.
     console.log(i); // Output | S / t / e / p / h / a / n / i / e
 }
 
