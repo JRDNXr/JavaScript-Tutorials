@@ -18,10 +18,14 @@ document.getElementById("styleUsingJS").style.backgroundColor = "orange";
 
 // Changes the display of the text (hides)
 function hideText() {
-    document.getElementById("hideMe").style.display = "none";
+    document.getElementById("ShowHideText").style.display = "none";
 }
 
 // Changes the display of the text (reveals)
 function showText() {
+    document.getElementById("ShowHideText").style.display = "block";
+}
+
+function showTextV2() {
     document.getElementById("showMe").style.display = "block";
 }
