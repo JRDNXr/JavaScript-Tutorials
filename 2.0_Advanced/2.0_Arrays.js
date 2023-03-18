@@ -72,5 +72,3 @@ const insaneArray = [Date.now, myFunction, myArray];
 // This is equivalent to simply calling the original array (Ie. console.log(myArray); )
 console.log(insaneArray[2]); // Output || [ 'Car', 'Plane', 'Boat' ]
 
-console.log(myArray);
-
