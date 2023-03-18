@@ -1,5 +1,6 @@
-// Data Types describe what values a variable can hold. Their important for the system to know how to treat them as well,
-// and what data they can expect that variable to hod.
+
+// Data Types describe what values a variable can hold. They tell the system how to treat them
+// and what data they can expect that variable to hold.
 
 // JavaScript has many Data Types.
 //      - Strings (text)
@@ -41,6 +42,9 @@ console.log();
 
 
 // NOTE: JavaScript types are Dynamic. This means the same variable can hold different data types.
+// Keep in mind that this is poor practice, and is only shown here for demonstration purposes.
+// In large scale programs, we wouldn't want to change the data type of a variable as it can confuse others working
+// on the same project.
 let b = "Test";
 b = 52;
 

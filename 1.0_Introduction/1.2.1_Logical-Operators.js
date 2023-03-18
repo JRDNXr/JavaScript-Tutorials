@@ -3,11 +3,16 @@
 
 // If the first value is undefined or null, the second value is assigned.
 let x = 10;
+
+// x ??= 5  |  10 ??= 5  - Since x is NOT null OR undefined, 5 is discarded and x remains equal to 10.
 x ??= 5;
 
 console.log("?? Operator Example 1: " + x); // Output | ?? Operator Example 1: 10
 
+
 let y = null;
+
+// y ??= 7  |  null ??= 7  - Since y IS a null, y changes its value to 7.
 y ??= 7;
 
 console.log("?? Operator Example 2: " + y); // Output | ?? Operator Example 2: 7
@@ -21,8 +26,8 @@ console.log();
 
 // If the first value is true, the second value is assigned.
 
-// You can get true values by initializing the variable with a value OTHER than "false" or "null". The variable MUST hold a value in
-// order for it to be considered true.
+// You can get true values by initializing the variable with a value OTHER than "false" or "null". The variable MUST hold a
+// value in order for it to be considered true.
 
 // Literals (numbers and Strings) are all treated as true, since they contain a value.
 let j = 60;

@@ -16,7 +16,7 @@ let b = "test";
 // Identifiers: The variable name.
 // Ie. let "x" = 3; the "x" is the identifier.
 
-// NOTE: JavaScript identifiers cannot contain hypens. Only underscores are allowed.
+// NOTE: JavaScript identifiers cannot contain hyphens. Only underscores are allowed.
 // NOTE: JavaScript is Case Sensitive.
 //       Ie. let firstName = "";
 //           let firstname = "";
@@ -26,15 +26,15 @@ let b = "test";
 var z = 10;
 
 // vars:
-//      - Can be redeclared.
-//      - Can be declared after use.
-//      - Are not limited or restricted by scopes.
+//      - Can be re-declared - We declared the identifier "z" as a number. We can change the identifier to a String later.
+//      - Can be declared after use. - We can use the identifier "z" before it even has a value.
+//      - Are not limited or restricted by scopes - Vars can be used anywhere, anytime.
 
 // However, vars are NOT recommended, as it can make large scale programs more difficult.
 
 // It is best to use let:
 /*
-    - Variables defined with let cannot be Redeclared.
+    - Variables defined with let cannot be re-declared.
 
     - Variables defined with let must be Declared before use.
 
@@ -45,7 +45,8 @@ var z = 10;
 // It's best practice to use CAPITALS when creating a const variable name.
 // const does not define a constant value. It defines a constant reference to a value.
 // This simply means that the identifier used in a const cannot be declared or initialized elsewhere. const's main purpose is to
-// prevent the declaration and intitialization of another identifier with the same name.
+// prevent the declaration and initialization of another identifier with the same name, while simultaneously providing a
+// constant reference.
 
 const PIE = 3.14;
 

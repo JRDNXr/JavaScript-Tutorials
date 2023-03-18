@@ -17,4 +17,6 @@
 */
 
 // console.log can be used to print text to the console.
+// You can run this program in Visual Studio Code and see the output in the Terminal.
+// You can also see this in a browser. Right-click anywhere and click "Inspect". Find the "Console" tab.
 console.log("Hello, World!"); // Output | Hello, World!

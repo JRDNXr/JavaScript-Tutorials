@@ -5,7 +5,7 @@
 
 // Functions are useful, especially (but not limited to) when a user clicks on a button.
 
-// Function names follow the same rules as variables (letters, digits, underscores, and dollar signs (same rules as variables)).
+// Function names follow the same rules as variables (letters, digits, underscores, and dollar signs).
 
 function myFunction() {
     console.log("The function works!");
@@ -30,12 +30,15 @@ function addTwoNumbers(num1, num2) {
 
     // The purpose of this function is to add 2 numbers together. Below is the code that does just that:
     let sum = num1 + num2;
-    console.log(num1 + " + " + num2 + " = " + sum); // Output | 25
+    console.log(num1 + " + " + num2 + " = " + sum); // Output | 10 + 15 = 25
 
-    // NOTE: The following would not work when displaying variables in your output:
+    // NOTE: The following WILL NOT work:
     // console.log(num1 + num2 + " = " + sum); // Output | 25 = 25.
     //
-    // That is why the code above separates the "num" variables by putting a String inbetween them (the + " + " + portion).
+    // We have to distinguish between the mathematical symbol plus sign and the concatenation symbol plus sign (+).
+    // We do this by using quotes (single, double, or back ticks).
+    // That is why the code above separates the "num" variables by putting a String in between them (the + " + " + portion).
+    
 
     console.log();
 }
@@ -62,10 +65,18 @@ function multiplyTwoNumbers(num3, num4) {
 const FOUR = 4;
 const FIVE = 5;
 
-// The first example sends "hard coded" arguments. Hard coded means the number or String is typed into the code itself verus
+// The first example sends "hard coded" arguments. Hard coded means the number or String is typed into the code itself versus
 // inside a variable, such as below. We are sending variable values to the function.
 multiplyTwoNumbers(FOUR, FIVE); // The first time this executes, the function returns the value 20 back. However, we do not do
                                 // anything with the result, and therefore nothing is shown to us.
+
+
+// Here is an example where we can act on the return statement:
+if (multiplyTwoNumbers(FOUR, FIVE) == 20) {
+    console.log("Execute code here.");
+
+    console.log();
+}
 
 // We can append the function call inside a console.log in order to show the output:
 console.log("Answer: " + multiplyTwoNumbers(FOUR, FIVE)); // Output || 20
@@ -73,7 +84,7 @@ console.log("Answer: " + multiplyTwoNumbers(FOUR, FIVE)); // Output || 20
 // To make it fancy, we can add Strings to be shown to us:
 console.log("Answer: " + FOUR + " x " + FIVE + " = " + multiplyTwoNumbers(FOUR, FIVE)); // Output | Answer: 4 x 5 = 20
 
-// Here is an alternative to Line 74:
+// Here is an alternative to Line 82:
 // We are initializing the variable "product" with the answer from the function call "multiplyTwoNumbers".
 let product = multiplyTwoNumbers(FOUR, FIVE);
 

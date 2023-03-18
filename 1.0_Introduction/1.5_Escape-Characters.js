@@ -8,23 +8,23 @@
 // The solution is Escape Characters. You can also use different quotation marks.
 
 
-// Double Quotation Marks (" "). Ie. Escape Character + "
+// Double Quotation Marks (" ")
 // Use the backslash escape character "\" before using the double quotation mark.
 console.log("This is a \"test\" to see how quotes inside a String will \"work\"."); // Output | This is a "test" to see how quotes inside a String will "work".
 
 
 
-// Using single quotations to surround the whole text, allowing us to use double quotations on the word "test".
+// Use single quotations to surround the whole text, allowing us to use double quotations on the word "test".
 console.log('Another "test" to see quotes work.'); // Output | Another "test" to see quotes work.
 
 
 
-// Single Quotation Marks (' '). Ie. Escape Character + '.
+// Single Quotation Marks (' ')
 console.log("A test on \'single quotation marks\'."); // Output | A test on 'single quotation marks'.
 
 
 // Backslash Character ( \ ).
-// We use "\\" to place a single backslash character in a String. Ie. Escape character + \.
+// We use "\\" to place a single backslash character in a String.
 console.log("A test on backslash (\\) characters."); // Output | A test on backslash (\) characters.
 
 
