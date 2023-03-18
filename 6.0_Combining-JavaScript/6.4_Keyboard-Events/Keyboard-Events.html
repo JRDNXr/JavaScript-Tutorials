@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>4.4 - Keyboard Events</title>
+        <title>6.4 - Keyboard Events</title>
         <link rel="icon" type="image/x-icon" href="../../0.0_Pictures/JD-Logo-King-Custom.png">
 
-        <link rel="stylesheet" href="4.4_Keyboard-Events.css"/>
+        <link rel="stylesheet" href="Keyboard-Events.css"/>
     </head>
 
     <body>
         <form>
             <label for="userText">Type Here:</label>
+
+            <!-- We use the HTML attribute "detectedKey" to determine when a user presses any key in the text box. -->
             <input type="text" placeholder="Enter any number" name="userText" onkeydown="detectedKey()"/>
 
-            <p id="textMsg">Did the user type in the box?: No</p>
+            <!-- Our default message when you open the webpage. -->
+            <p id="userMsg">Did the user type in the box?: No</p>
 
-            <input type="reset" onclick="reset()"/>
+            <!-- This input resets our input text field above AND changes the text. -->
+            <input type="reset" onclick="revert()" />
         </form>
     </body>
 
     <footer>
-        <script src="4.4_Keyboard-Events.js"></script>
+        <script src="Keyboard-Events.js"></script>
     </footer>
 </html>

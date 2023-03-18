@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>4.2 - Buttons</title>
+        <title>6.2 - Buttons</title>
         <link rel="icon" type="image/x-icon" href="../../0.0_Pictures/JD-Logo-King-Custom.png">
 
-        <link rel="stylesheet" href="4.2_Buttons.css"/>
+        <link rel="stylesheet" href="Buttons.css"/>
     </head>
 
     <body>
         <p id="textChange">This text will change to something else.</p>
         
         <!-- You can run the whole JavaScript code within HTML, but this is not recommended. -->
+        <!-- This is also known as "inline JavaScript", since we are coding it inside an HTML document. -->
         <button onclick="document.getElementById('textChange').innerHTML = 'Button clicked! Sentence changed!'">CLICK THIS BUTTON</button>
 
         <!-- The length of the JavaScript code is too long here. So we use the technique below. -->
 
         <hr>
 
-        <p id="changeText">Another sentence that can be changed ny clicking the button below.</p>
+        <p id="changeText">Another sentence that can be changed by clicking the button below.</p>
 
         <!-- We call JavaScript code by using functions (pasting the whole JavaScript code in an HTML document is inefficient
              and can be lengthy). -->
@@ -25,6 +26,6 @@
     </body>
 
     <footer>
-        <script src="4.2_Buttons.js"></script>
+        <script src="Buttons.js"></script>
     </footer>
 </html>
