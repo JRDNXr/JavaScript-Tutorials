@@ -54,7 +54,7 @@ for (let count1 = 0, count2 = 0; count2 < superheros.length; count2++) {
 
 console.log(text); // Output || Bruce || Wayne ||
 
-// You may have noticed that the above method only shows the superhero's first names. superheros.length = 2. This means the for
+// You may have noticed that the above method only shows the superhero's first names. superheros.length = 2. This means thefor
 // loop only iterates twice. In order to show all of the data in a multidimensional array, we must use 2 for loops. These are
 // called "nested for loops". Look in the next tutorial for more information on this.
 
