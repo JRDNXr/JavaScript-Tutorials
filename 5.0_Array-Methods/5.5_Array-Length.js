@@ -1,14 +1,6 @@
 
 // Arrays have properties and methods that allow us to maximize their functionality.
 
-// length() - More detail in 4.4_String-Length.js
-//      - Get the last element in an array using length
-// push()
-// shift()
-// pop()
-// sort()
-
-
 const primaryColours = ["Red", "Yellow", "Blue"];
 // INDEX #:               0       1         2
 // LENGTH #:              1       2         3

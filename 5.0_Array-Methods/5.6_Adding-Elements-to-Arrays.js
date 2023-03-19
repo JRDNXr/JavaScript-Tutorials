@@ -28,7 +28,6 @@ console.log();
 const shapes = ["Square", "Circle", "Rectangle"];
 
 // One final way to add elements is using the unshift() method. The difference is that unshift() works from the beginning.
-
 shapes.unshift("Triangle"); // Added Triangle
 console.log(shapes); // Output || [ 'Triangle', 'Square', 'Circle', 'Rectangle' ]
 

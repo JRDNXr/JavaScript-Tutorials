@@ -44,7 +44,11 @@ delete vehicles[2]; // Even though we deleted the element, doing this causes a h
 console.log(vehicles); // Output || [ 'Car', 'Plane', <1 empty item>, 'Boat' ]
 
 
-const newVehicles = ["Car", "Plane", "Zebra", "Boat"];
-newVehicles[newVehicles.length - 2].pop();
 
-console.log(newVehicles);
+// SPLICE
+// We can remove elements anywhere in an array using the splice() method.
+const newVehicles = ["Car", "Plane", "Zebra", "Boat"];
+
+// We are indicating to go to index number 2 and remove (inclusively) 1 element.
+newVehicles.splice(2, 1);
+console.log(newVehicles); // Output || [ 'Car', 'Plane', 'Boat' ]
