@@ -5,12 +5,11 @@
 // Say suppose we have multiple Employees:
 
 const employeeData = [ ["John", "Doe", 35, "April 10, 1988"], ["Mark", "Speed", 40, "November 30, 1983"] ];
-
 // INDEX NUMBERS:
 // 1 (ARRAY NUMBER):   [                 0                 ]  [                  1                     ]
 // 2 (ELEMENT NUMBER): [  0       1     2          3       ]  [   0       1      2            3        ]
 
-// We can call these elements by referring to their index numbers.
+// We can call these elements by first referring to their array number and then their element number.
 
 // Looking at the above INDEX NUMBERS, we have 2 sets of indexes - Array Number and Element Number. The Array Number set is
 // separated by the comma at the end of the purple square bracket. The Element Number set looks at each element individually.

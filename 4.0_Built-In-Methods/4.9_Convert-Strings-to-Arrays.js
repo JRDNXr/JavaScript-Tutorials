@@ -17,8 +17,8 @@ console.log(myArray[3]); // Output || Green
 //
 //       And we perform the split() above, the whitespace before "Orange" and before "Yellow" will also be put into the array.
 //
-//       In lesser words, if you are converting a String to an Array and do not want spaces in the array, you must
-//       ensure that the original String does not have spaces.
+//       If you are converting a String to an Array and do not want spaces in the array, you must ensure that the original
+//       String does not have spaces. You can remove whitespace in Tutorial 4.7.
 
 
 // NOTE: If the separator is omitted, the returned array will contain the whole string at index 0.

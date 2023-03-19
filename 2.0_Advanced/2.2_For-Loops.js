@@ -63,3 +63,4 @@ console.log(text); // Output || Bruce || Wayne ||
 // All 3 Expressions in a for loop are OPTIONAL. If your starting out, it's best to use all 3.
 
 // EXPRESSION 1
+// We can dec

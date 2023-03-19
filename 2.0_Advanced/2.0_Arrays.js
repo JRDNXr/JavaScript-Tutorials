@@ -30,14 +30,13 @@ const colours = [
 const numbers = [1, 2, 3, 9];
 
 // The following will output the Array "definition". This is what the computer interprets when it sees your Array.
-// This isn't pretty to the human eye, but thankfully we can output it in a better way.
+// This isn't pretty to the human eye, but thankfully we can output it in a better way using for loops (later on).
 console.log(colours); // Output || [ 'Red', 'Blue', 'Yellow' ]
 console.log(numbers); // Output || [ 1, 2, 3, 9 ]
 
 
 
 // Arrays can be declared but do not need to contain values. We can add values later.
-
 const planets = [];
 
 // Arrays elements can be accessed by referring to their "index" number. By default, Arrays start indexing at 0.
